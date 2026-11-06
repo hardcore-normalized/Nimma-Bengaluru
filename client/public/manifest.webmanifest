@@ -1,0 +1,10 @@
+{
+  "name": "Nimma Bengaluru",
+  "short_name": "Nimma BLR",
+  "description": "Report civic issues in Bengaluru and track the official response.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf3e4",
+  "theme_color": "#fbf3e4",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

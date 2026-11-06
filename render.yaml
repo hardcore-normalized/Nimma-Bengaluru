@@ -1,0 +1,27 @@
+# Render Blueprint – deploys Nimma Bengaluru as a free web service.
+# Render → New → Blueprint → pick this repository. You will be asked for MONGODB_URI.
+services:
+  - type: web
+    name: nimma-bengaluru
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: node server/index.js
+    healthCheckPath: /api/system/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: MONGODB_URI # your MongoDB Atlas connection string (kept out of git)
+        sync: false
+      - key: DB_MODE
+        value: atlas
+      - key: ENABLE_HTTPS # Render already serves the site over https
+        value: "false"
+      - key: TRUST_PROXY # one proxy hop (Render) – needed for real visitor IPs
+        value: "1"
+      - key: JWT_SECRET # random secret so logins survive restarts
+        generateValue: true
+      - key: SEED_DEMO_DATA
+        value: "true"
+      - key: SMS_MODE
+        value: demo

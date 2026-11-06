@@ -1,0 +1,12 @@
+node_modules/
+client/dist/
+.env
+.env.*
+!.env.example
+data/local-db/
+data/mongodb-binaries/
+data/certs/
+data/.secret
+npm-debug.log*
+Thumbs.db
+Desktop.ini
