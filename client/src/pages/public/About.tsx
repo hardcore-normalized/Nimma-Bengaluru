@@ -35,7 +35,7 @@ export default function About() {
           Bengaluru Authority (GBA) city corporations ({config?.wardCount || 369} wards) – and the administrator reviews it, assigns it to the right department, and closes it with evidence.
         </p>
         <div className="alert alert-info small">
-          This is an academic prototype built as a B.Tech project. It is <strong>not</strong> an official Government of Karnataka or GBA service and does not automatically forward complaints
+          This is an academic prototype. It is <strong>not</strong> an official Government of Karnataka or GBA service and does not automatically forward complaints
           to any authority. For official complaints use Sahaaya (1533) or the Janaspandana portal.
         </div>
       </section>

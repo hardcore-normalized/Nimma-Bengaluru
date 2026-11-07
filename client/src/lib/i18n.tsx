@@ -107,7 +107,7 @@ const EN = {
   'common.close': 'Close',
   'common.cancel': 'Cancel',
   'common.logout': 'Sign out',
-  'footer.prototype': 'Academic prototype (B.Tech CSE – Data Science project, CMR University). Not an official Government service.',
+  'footer.prototype': 'Academic prototype. Not an official Government service.',
 };
 
 export type MsgKey = keyof typeof EN;
